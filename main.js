@@ -20,11 +20,6 @@ function myFunction() {
     alert("page reloads every 1 min!");
 }
 
-// if (isNan(R1time) || isNan(R2time) || isNan(R3time)) {
-//     break;
-//     let w = document.querySelector('#Fastestrunner').innerHTML = "there is an equality";
-// }
-
 if (secR1 < secR2 && secR1 < secR3) {
     console.log("R1 is the fastest " + secR1);
     let w = document.querySelector('#Fastestrunner').innerHTML = "Runner1  !";
@@ -37,19 +32,10 @@ if (secR1 < secR2 && secR1 < secR3) {
     console.log("there is an equality");
     let w = document.querySelector('#Fastestrunner').innerHTML = "there is an equality";
 
-}
-// else if (isNan(secR1) && isNan(secR2) && isNan(secR3)) {
-//     console.log("there are nan inputs");
-//     let w = document.querySelector('#Fastestrunner').innerHTML = "there are no input times";
-
-// }
-else {
+} else {
     console.log("R3 fastest");
     let w = document.querySelector('#Fastestrunner').innerHTML = "Runner3  !";
-
-
 }
-
 
 
 let x = document.querySelector('#runner1time').textContent = secR1;
@@ -59,9 +45,3 @@ let z = document.querySelector('#runner3time').textContent = secR3;
 /// page reoad after 1 min////
 setInterval('window.location.reload()', 60000);
 
-
-
-
-
-
-/////// object from user input/////////////
